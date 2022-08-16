@@ -16,7 +16,7 @@ body{
 }
 .bottom-container{
     background-color: #66BFBF;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 10px 20px;
     position: relative;
 }
 .copyright{
@@ -28,22 +28,20 @@ body{
 
 h1{ 
     color: #66BFBF ;
-    display: inline-block;
-    margin: 100px auto 0 auto;  
-    margin-bottom: 0px;
+    margin: 7% auto 0 auto;  
     font-family: 'Sacramento', cursive;
-    font-size: 5rem;
+    font-size: 5vw;
     
 }
 .subheading{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     color: #66BFBF;
     font-weight: normal;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     color: #66BFBF;
     font-weight: 600;
 }
@@ -52,22 +50,31 @@ h3{
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
     font-weight: 600;
+    font-size: 1.5vw;
+}
+p{
+    font-size: 1.1vw;
 }
 .pro{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 .bottom-cloud{
+    display: block;
     position: absolute;
-    left: 300px;
-    bottom: 300px;
-    
+    left: 25%;
+    bottom: 47%;
+    height: auto;
+    width: 10%;
 }
 .top-cloud{
+    display: block;
     position: absolute;
-    right: 300px;
-    top: 50px;
+    right: 25%;
+    top: 10%;
+    height: auto;
+    width: 10%;
 }
 a{
     color: #11999E;
@@ -83,14 +90,18 @@ a{
 .code{
     float: left;
     margin-right: 30px;
+    margin-top: 10px;
+    height: auto;
 }
 .html{
     float: right;
     margin-left: 30px;
+    margin-top: 10px;
 }
 .css{
     float: left;
     margin-right: 30px;
+    margin-top: 10px;
 }
 .profile{
     line-height: 2;
@@ -157,49 +168,92 @@ hr{
   .skills{
     margin-top: 100px;
   }
-
-  
-  @media only screen and (max-width: 600px){
-   .mountain{
-    /* font-size:30px; */
-    width:100%;
-   }
-   .bottom-cloud{
-    /* overflow-x: hidden; */
-    transform: translateX(-300px);
-    z-index:0;
-   }
-   body{
-    overflow-x: hidden;
-   }
-   h1{
-    position:relative;
-    z-index:3;
-   }
-   h2{
-    position:relative;
-    z-index:3;
-   }
+  .mountain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  @media only screen and (max-width: 654px){
+    .bottom-container{
+        background-color: #66BFBF;
+        padding: 5px 5px;
+        position: relative;
+    }
+    .computer-image{
+        width: 100px;
+    }
+    .profile-pic{
+        width: 120px;
+    }
+    .code{
+        width: 70px;
+    }
+    .html{
+        width: 70px;
+    }
+    .css{
+        width: 70px;
+    }
+    .btn{
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+    }
+    .linkedin{
+        margin: 0 1rem 0 1rem;
+    }
+    .instagram{
+        margin: 0 1rem 0 1rem;
+    }
+    .github{
+        margin: 0 1rem 0 1rem;
+    }
+  }
+  @media only screen and (max-width: 992px){
+    .bottom-container{
+        background-color: #66BFBF;
+        padding: 5px 5px;
+        position: relative;
+    }
+    .computer-image{
+        width: 120px;
+    }
+    .profile-pic{
+        width: 150px;
+    }
+    .code{
+        width: 100px;
+    }
+    .html{
+        width: 100px;
+    }
+    .css{
+        width: 100px;
+    }
+    .btn{
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+    }
+    .linkedin{
+        margin: 0 1.5rem 0 1.5rem;
+    }
+    .instagram{
+        margin: 0 1.5rem 0 1.5rem;
+    }
+    .github{
+        margin: 0 1.5rem 0 1.5rem;
+    }
   }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+  .profile-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
   }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+  .computer-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
   }
-  
